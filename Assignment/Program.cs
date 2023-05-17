@@ -22,7 +22,6 @@
             Console.Write(text);
             string userInput = Console.ReadLine(); //Needs work -> try/catch + loop or Int.TryParse + loop
             int number = Convert.ToInt32(userInput);
-            Console.Write(number);
             return number;
         }
 
@@ -34,9 +33,14 @@
         /// <param name="min">Smallest permissible value</param>
         /// <param name="max">Largest permissible value</param>
         /// <returns>The user input as an integer</returns>
-        public static int AskForNumberInRange(string text, int min, int max)
+        public static int AskForNumber(string text, int min, int max)
         {
-            throw new NotImplementedException();
+            int userInput = AskForNumber(text);
+            while (userInput < min || userInput > max)
+            {
+                userInput = AskForNumber("Your previous input is not valid, try again.");
+            }
+            return userInput;
         }
     }
 
@@ -44,7 +48,7 @@
     {
         static void Main()
         {
-            ArrayReplicator.AskForNumber("Test: ");
+            ArrayReplicator.AskForNumber("Test: ", 1, 10);
             /*
             const int Min = 0;
             const int Max = 10;
