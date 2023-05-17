@@ -9,7 +9,9 @@
         /// <returns>A deep copy of the original array</returns>
         public static int[] ReplicateArray(int[] original)
         {
-            throw new NotImplementedException();
+            // Don't do this (shallow copy - tests should fail)
+            int[] result = original;
+            return original;
         }
 
         /// <summary>
