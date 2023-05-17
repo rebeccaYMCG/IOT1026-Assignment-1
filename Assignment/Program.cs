@@ -36,8 +36,6 @@
         /// <returns>The user input as an integer</returns>
         public static int AskForNumberInRange(string text, int min, int max)
         {
-            
-            
             throw new NotImplementedException();
         }
     }
