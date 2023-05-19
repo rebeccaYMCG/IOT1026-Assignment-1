@@ -11,8 +11,13 @@
     </a>
 </p>
 
-# IOT1026-Assignment-1
-Write a description of the project here and don't forget to update the badges.  
+# IOT1026-Assignment-1  
+The Array Replicator project provides methods to replicate arrays and interact with user input. This program performs the following tasks:
+    1. Asks the user to input the ize of an array and fill it with user-specified integers.
+    2. Calls the 'ReplicateArray' method to create a copy if the original array.
+    3. Verifies the original and replicated arrys by printing corresponding elements. 
+
+![outputOfRunningProgram]("C:\Users\rebec\OneDrive\Pictures\Screenshot 2023-05-19 134953.jpg")
 
 [Assignment Instructions](docs/instructions.md)  
 [How to start coding](docs/how-to-use.md)  
