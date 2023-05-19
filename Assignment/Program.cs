@@ -57,7 +57,7 @@
             int userInput = AskForNumber(text);
             while (userInput < min || userInput > max)
             {
-                userInput = AskForNumber("Your previous input is not valid, try again.");
+                userInput = AskForNumber("Your previous input is not valid, try again: ");
             }
             return userInput;
         }
